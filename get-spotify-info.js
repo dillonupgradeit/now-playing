@@ -4,7 +4,9 @@ function getSpotifyInfo(){
     scrapedSong.origin = "SPOTIFY";
     scrapedSong.mediaType = "AUDIO"
 
-    //NOW-PLAYING-BAR FOOTER BAR
+    // Spotify Playlist, Homepage, Album, Single Pages
+    // example playlist: https://open.spotify.com/playlist/39qc9QYYIWQ5NqSjutGVm5
+    // NOW-PLAYING-BAR FOOTER BAR
     const isPlaying = document.querySelector('button[data-testid="control-button-pause"]');
     if(isPlaying){
         const rootPlayer = document.querySelector('.Root__now-playing-bar');
